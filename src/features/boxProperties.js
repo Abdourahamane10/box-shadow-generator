@@ -6,7 +6,7 @@ const initialState = [
             inputNumber: 1,
             name: "Border raduis",
             value: 25,
-            type: "Range",
+            type: "range",
             slice: "boxProperties",
             minMax: [0, 250]
         },
@@ -14,7 +14,7 @@ const initialState = [
             inputNumber: 2,
             name: "Height",
             value: 250,
-            type: "Range",
+            type: "range",
             slice: "boxProperties",
             minMax: [0, 500]
         },
@@ -22,7 +22,7 @@ const initialState = [
             inputNumber: 3,
             name: "Width",
             value: 250,
-            type: "Range",
+            type: "range",
             slice: "boxProperties",
             minMax: [0, 500]
         },

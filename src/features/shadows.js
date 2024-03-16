@@ -10,28 +10,28 @@ const initialState = {
             inputNumber: 1,
             name: "Horizontal offset",
             value: 0,
-            type: "Range",
+            type: "range",
             minMax: [-250, 250]
         },
         {
             inputNumber: 2,
             name: "Vertical offset",
             value: 10,
-            type: "Range",
+            type: "range",
             minMax: [-250, 250]
         },
         {
             inputNumber: 3,
             name: "Blur radius",
             value: 15,
-            type: "Range",
+            type: "range",
             minMax: [0, 250]
         },
         {
             inputNumber: 4,
             name: "Spread offset",
             value: -3,
-            type: "Range",
+            type: "range",
             minMax: [-250, 250]
         },
         {

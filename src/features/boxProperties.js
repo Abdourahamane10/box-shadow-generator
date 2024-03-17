@@ -41,7 +41,8 @@ export const boxSlice = createSlice({
     initialState,
     reducers: {
         updateBoxValue: (state, action) => {
-            
+            /* On cherche la partie du state (elt du state) qui correspond au numéro de l'input dispatché par la fonction handleInputs qui s'exécute lorsqu'on change la valeur de l'input, et on met à jour sa valeur par la valeur mise par l'utilisateur */
+            state.find(el => el.inputNumber === action.payload.inputNumber).value = action.payload.value
         }
     }
 })

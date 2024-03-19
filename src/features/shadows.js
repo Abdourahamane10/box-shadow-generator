@@ -110,7 +110,10 @@ export const shadowSlice = createSlice({
             
         },
         updateCheckbox: (state, action) => {
-            
+            /* On sélectionne l'ombre en question */
+            const currentShadow = state.find(shadow => shadow.id === action.payload.shadowID)
+
+            currentShadow[action.payload.name] = !currentShadow[action.payload.name]
         }
     }
 })

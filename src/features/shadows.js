@@ -99,6 +99,14 @@ export const shadowSlice = createSlice({
             )
         },
         updateShadowValue: (state, action) => {
+            /* On sélectionne l'ombre en question */
+            const currentShadow = state.find(shadow => shadow.id === action.payload.shadowID)
+
+            /* Une fois qu'on a l'ombre on sélectionne l'input qu'on veut changer */
+            const currentInput = currentShadow.inputs.find(input => input.inputNumber === action.payload.inputNumber)
+
+            /* Une fois qu'on a l'input qu'on veut changer, on change sa valeur */
+            currentInput.value = action.payload.value
             
         },
         updateCheckbox: (state, action) => {

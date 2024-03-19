@@ -16,7 +16,7 @@ export default function ShadowRange({inputData, shadowID}) {
 
   return (
     <div className="my-4">
-      <div className="flex justify-between">
+      <div className="flex justify-between items-baseline">
         <p>{inputData.name}</p>
         <div className="flex items-baseline mb-2">
           <input onChange={handleInputs} value={inputData.value} className="w-14 h-8 mr-2 border border-gray-200 text-center" type="number" />

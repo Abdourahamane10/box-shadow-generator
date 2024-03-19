@@ -34,7 +34,7 @@ export default function Shadow({pannelNumber, shadow}) {
            }} />
         </button>
         {toggleShadow && <>
-          <div className="flex items-end py-4 px-6">
+          <div className="flex items-end pt-4 px-6">
           <ShadowCheckbox name={"active"} shadowID={shadow.id} />
           <ShadowCheckbox name={"inset"} shadowID={shadow.id} />
           <button className="ml-auto text-sm bg-red-600 text-white hover:bg-red-700 py-1 px-3 rounded">

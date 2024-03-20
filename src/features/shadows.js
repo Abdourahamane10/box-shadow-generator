@@ -50,7 +50,10 @@ export const shadowSlice = createSlice({
     initialState,
     reducers: {
         removeShadow: (state, action) => {
-
+            /* On récupère l'index du shadow (ombre) à supprimer */
+            const shadowIndexToRemove = state.findIndex(shadow => shadow.id === action.payload)
+            /* On supprime l'ombre (shadow) en question dans le state (tableau des ombres) */
+            state.splice(shadowIndexToRemove, 1)
         },
         addShadow: (state, action) => {
             state.push(
